@@ -1,0 +1,23 @@
+.container {
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid black; */
+	background-color: #bee3b4;
+	color: white;
+	font-weight: 700;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+}
+.container div {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	/* padding: 0.5rem 0; */
+	align-items: center;
+	/* border: 1px solid black; */
+	font-size: 1.5rem;
+}
+.container div p {
+	margin: 0;
+}

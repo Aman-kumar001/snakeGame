@@ -1,0 +1,62 @@
+.container {
+	height: 95vh;
+	width: 100%;
+}
+.body {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	column-gap: 2rem;
+	height: 90%;
+}
+
+/* left component */
+.leftComponent {
+	flex: 1;
+}
+.rightComponent {
+	flex: 1;
+	padding-top: 2rem;
+	/* border: 1px solid black; */
+}
+.currentScore p {
+	margin: 0;
+}
+.currentScore p:last-child {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+/* right component  */
+.Board {
+	width: 100%;
+	background-color: #6fc27650;
+	border: 2px solid #6fc276;
+	aspect-ratio: 1/1;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+}
+.food {
+	background-image: url(../images/apple.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* background-color: red; */
+	z-index: 100;
+}
+.snakeHead {
+	background-color: blue;
+	border-radius: 50%;
+	background-color: green;
+}
+.snakeBody {
+	background-color: #508e55;
+	border-radius: 50%;
+	border: 2px solid rgb(0, 99, 0);
+}
+@media (max-width: 900px) {
+	.body {
+		flex-direction: column;
+	}
+}
